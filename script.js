@@ -8,11 +8,10 @@ function addWord() {
     let currentWord = document.getElementById("givenWord").value;
     if (dictionary.includes(currentWord.toLowerCase())) {
         alert("The word already exists!")
-        resetField()
     } else {
         dictionary.push(currentWord.toLowerCase())
-        resetField()
     }
+    resetField()
 }
 
 function checkWord() {
